@@ -1,6 +1,6 @@
 from __future__ import absolute_import,unicode_literals
 from datetime import timezone
-from celery.schedules import crontab
+# from celery.schedules import crontab
 from celery import Celery
 
 import os
