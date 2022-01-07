@@ -171,8 +171,9 @@ CELERY_RESULT_BACKEND= "django-db"
 
 CELERY_BEAT_SCHEDULE={
     "schedule_task":{
-        "task":"Email_schedule_cron_django_celery_app.tasks.send_email",
-        "schedule":crontab(hour=15,minute=26),
+        "task":"Email_schedule_cron_django_celery_app.tasks.add",
+        "schedule":10.0,
+        "args":(10,20),
     }
 }
 

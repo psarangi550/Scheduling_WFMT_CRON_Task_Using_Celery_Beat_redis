@@ -15,3 +15,11 @@ def send_email():
         fail_silently=False
     )
     return "Done"
+
+@shared_task
+def add(a,b):
+    result=a+b
+    print(result)
+    return result
+
+    
